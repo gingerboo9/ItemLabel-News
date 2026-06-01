@@ -1,0 +1,229 @@
+/* body formatting */
+* { box-sizing: border-box;}
+
+body { background-image: url('peepycowbackground.png');
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+       background-position: center;
+       color: #ccc8c8;
+       font-family: Verdana, Arial, sans-serif; 
+       margin: 0;
+       padding: 0;}
+
+body.not-fixed { background-image: url('peepycowbackground.png');
+       background-repeat: no-repeat;
+       background-attachment: scroll;
+       background-size: cover;
+       background-position: center;
+       color: #ccc8c8;
+       font-family: Verdana, Arial, sans-serif; 
+       margin: 0;
+       padding: 0;}
+
+
+/* Moving banner divs */
+.banner-container { width: 100%;
+                    overflow: hidden; /* Hides the text when it leaves the screen */
+                    background: #333;
+                    color: white;
+                    padding: 10px 0;
+                    white-space: nowrap; /* Keeps items in a single line */ }
+
+.banner-scroll { display: flex;
+                 width: max-content; /* Ensures the container is as wide as the items */
+                 animation: scroll-left 60s linear infinite; }
+
+.banner-item { padding: 0 50px; /* Space between the moving messages */
+               font-family: Arial, sans-serif;
+               font-weight: bold; }
+
+.banner-item a{text-decoration: none;} /* Removes underline from links */
+.banner-item a:link{color:#ccc8c8;}
+.banner-item a:visited{color:#ccc8c8;}
+
+/* The movement logic */
+@keyframes scroll-left {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(-100%); } }
+
+  /* h1 (big main heading) format */
+h1 { background-color: #a70b0b;
+     background: linear-gradient(#7e0303, #ff0101);
+     height: 120px;
+     color: #FFFFFF;
+     font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+     padding-top: .5em;
+     font-size: 3em;
+     letter-spacing: 0.25em;
+     border-radius: 5px;}
+
+h1 a { text-decoration: none; }
+
+h1 a:link { color: #040042; }
+
+h1 a:visited { color: #020074; }
+
+h1 a:hover { color: #2c3374; }
+
+/* more large header at top formatting. this is for the shadow/highlight */
+#TopLink { background-color: #EAEAEA;
+           min-width: 550px;
+           max-width: 2048px;
+           border-radius: 5px;
+           box-shadow: 0px 2px 18px 0px rgb(0, 195, 255);
+           width: 80%;
+           margin-right: auto;
+           margin-left: auto;}
+
+
+/* all main page news images follow this formatting */
+.Main-News-Pictures { max-width: 100%;
+                      height: auto;
+                      padding-top: 1em;
+                      padding-right: .5em;
+                      padding-bottom: 1em;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center; 
+                      animation: fadein linear; 
+                      animation-timeline: view();
+                      animation-range: entry 0% cover 40%;}
+
+@keyframes fadein { from {opacity: 0; scale: 0.7;} to {opacity: 1; scale: 1;}}
+
+/* the box behind the main page images */
+
+.Main-Box { background-color:#7c7c7c;
+            border-radius: 5px;
+            box-shadow: 0px 10px 20px 10px #7c7c7c; }
+
+
+img { max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover; }
+
+.center-img { display: flex;
+              justify-content: center; 
+              align-items: center; }
+
+.round-img { border-radius: 20px;   
+             width: 600px;
+             height: auto;
+             display: block; }
+
+nav { padding-top: .5em;
+      padding-right: 0;
+      padding-bottom: .5em;
+      display: block;
+      border: 2px solid #9c9c9c; 
+      border-radius: 5px;
+      font-weight: bold; 
+      float: left;
+      width: 160px;
+      font-size: 1.2em; 
+      text-align: left; 
+      background-color:#e2e2e2;
+      font-family:'Times New Roman', Times, serif;}
+
+nav a:link { color: #0044ff; }
+nav a:visited { color: #5e178d; }
+nav a:hover { color: #A52A2A; }
+nav a { text-decoration: none; }
+
+
+nav ul { list-style-type: none; 
+         padding-left: 1em;
+         display: flex; 
+         flex-direction: column;
+         gap: 20px; }
+
+
+
+main { display: block;
+       padding-left: 2em;
+       padding-right: 2em; 
+       margin-bottom: 5em;
+       background-color: #e2e2e2; 
+       margin-left: 170px; 
+       margin-right: 170px;
+       overflow: auto;
+       min-width: 350px;}
+
+.Break { padding-top: .5em;
+         padding-right: .5em;
+         padding-bottom: .5em;
+         font-size: 45px;
+         text-align: center;
+         color:rgb(197, 0, 0);
+         font-family: 'Times New Roman', Times, serif;
+         font-weight: 900;
+         text-decoration: underline;}
+
+.All { font-size: 30px;
+       text-align: center;
+       color:rgb(0, 0, 0);
+       font-family: 'Times New Roman', Times, serif;
+       font-weight: 700;
+       font-style: italic;}
+
+.most-paragraphs {color:#000000;
+                  font-family:'Times New Roman', Times, serif;
+                  font-weight: 400; 
+                  text-indent: 50px;
+                  font-size: 25px; }
+
+/* The "back" and "next" link on most pages */
+
+.bottom-link { display: flex;
+             justify-content: space-between;
+             width: 100%; 
+             padding-right: 2em; 
+             padding-bottom: 1em;}
+.bottom-link a { text-decoration: none; }
+.bottom-link a:link { color: #0044ff; }
+.bottom-link a:visited { color: #0044ff; }
+.bottom-link a:hover { color: #A52A2A; }
+
+/* the "next" link for breaking page 1 */
+
+.next-link-1 { text-align: right; 
+               padding-right: 2em;
+               padding-bottom: 1em;}
+.next-link-1 a { text-decoration: none; }
+.next-link-1 a:link { color: #0044ff; }
+.next-link-1 a:visited { color: #0044ff; }
+.next-link-1 a:hover { color: #A52A2A; }
+
+/* Clampy's "click me" link */
+
+.click-me { display: flex;
+            align-items: baseline; }
+.click-me a { text-decoration: none; }
+.click-me a:link { color: #0044ff; }
+.click-me a:visited { color: #0044ff; }
+.click-me a:hover { color: #A52A2A; }
+
+
+h2 { color:#000000;
+     text-align: center;
+     font-family:'Times New Roman', Times, serif;
+     font-size: 40px;}
+
+/* Bottom credits link */
+
+.bottom { position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #000000;
+          text-align: center;
+          padding: 10px; 
+          font-family:'Times New Roman', Times, serif; 
+          font-weight: bold;}
+
+.bottom a { color: #fff;
+            text-decoration: none; }

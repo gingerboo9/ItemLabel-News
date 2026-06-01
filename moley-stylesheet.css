@@ -1,0 +1,105 @@
+/* body formatting */
+* { box-sizing: border-box;}
+
+body { background-image: url('Moley/dirt.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       color: #ccc8c8;
+       font-family: Verdana, Arial, sans-serif; 
+       margin: 0;
+       padding: 0;}
+
+img { max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover; }
+
+.center-img { display: flex;
+              justify-content: center; 
+              align-items: center; }
+
+.round-img { border-radius: 20px;   
+             width: 600px;
+             height: auto;
+             display: block; }
+
+nav { padding-top: .5em;
+      padding-right: 0;
+      padding-bottom: .5em;
+      margin-top: 8em;
+      display: block;
+      border: 2px solid #dfbda1; 
+      border-radius: 5px;
+      font-weight: bold; 
+      float: left;
+      width: 160px;
+      font-size: 1.2em; 
+      text-align: left; 
+      background-color:#dfbda1;
+      font-family:'Times New Roman', Times, serif;}
+
+nav a:link { color: #251811; }
+nav a:visited { color: #251811; }
+nav a:hover { color: #A52A2A; }
+nav a { text-decoration: none; }
+
+
+nav ul { list-style-type: none; 
+         padding-left: 1em;
+         display: flex; 
+         flex-direction: column;
+         gap: 20px; }
+
+
+
+main { display: block;
+       padding-left: 2em;
+       padding-right: 2em; 
+       margin-bottom: 5em;
+       margin-top: 3em;
+       margin-left: 250px; 
+       margin-right: 250px;
+       background-color: #dfbda1; 
+       overflow: auto;
+       min-width: 350px; 
+       border-radius: 10px; }
+
+
+.most-paragraphs {color:#251811;
+                  font-family:'Times New Roman', Times, serif;
+                  font-weight: 400; 
+                  text-indent: 50px;
+                  font-size: 25px; }
+
+h2 { color:#251811;
+     text-align: center;
+     font-family:'Times New Roman', Times, serif;
+     font-size: 40px;}
+
+/* Images */
+
+img { max-width: 80%;
+      height: auto;
+      display: block;
+      object-fit: cover; }
+
+.center-img { display: flex;
+              justify-content: center; 
+              align-items: center; }
+
+
+/* Bottom credits link */
+
+.bottom { position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: rgb(41, 21, 13);
+          text-align: center;
+          padding: 10px; 
+          font-family:'Times New Roman', Times, serif; 
+          font-weight: bold;}
+
+.bottom a { color: #fff;
+            text-decoration: none; }

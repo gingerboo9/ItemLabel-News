@@ -1,0 +1,78 @@
+/* body formatting */
+
+* { box-sizing: border-box;}
+
+body { background-image: url(Fishcar/lightning.png), url('Fishcar/BOOMBOOM.jpg');
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+       background-position: center;
+       color: #ccc8c8;
+       font-family: Verdana, Arial, sans-serif; 
+       margin: 0;
+       padding: 0;}
+
+/* Nav formatting */
+
+nav { padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      display: flex;
+      position: fixed;
+      top: 0;
+      justify-content: space-evenly;
+      border: 2px solid #ffefa6; 
+      font-weight: bold; 
+      float: left;
+      width: 100%;
+      height: 50px;
+      font-size: 1em; 
+      text-align: left; 
+      background-color:#ff9900;
+      font-family:'Times New Roman', Times, serif;
+      z-index: 999;}
+
+nav a:link { color: #85451b; }
+nav a:visited { color: #85451b; }
+nav a:hover { color: #A52A2A; }
+nav a { text-decoration: none; }
+
+
+nav ul { list-style-type: none; 
+         padding-left: 1em;
+         display: flex; 
+         flex-direction: row;
+         gap: 20px; }
+
+
+/* Image formatting */
+
+img { max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover; 
+      box-shadow: 0px 5px 20px 10px #ffc402; }
+
+.center-img { max-width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center; 
+              margin-top: 12em; }
+
+/* Bottom credits link */
+
+.bottom { position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #ff9900;
+          text-align: center;
+          padding: 10px; 
+          font-family:'Times New Roman', Times, serif; 
+          font-weight: bold;}
+
+.bottom a { color: #291102;
+            text-decoration: none; }
+
