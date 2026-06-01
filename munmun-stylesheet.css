@@ -1,0 +1,90 @@
+/* body formatting */
+* { box-sizing: border-box;}
+
+body { background-color: #f3f3f3;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+       background-size: cover;
+       background-position: center;
+       color: #ccc8c8;
+       font-family: Verdana, Arial, sans-serif; 
+       margin: 0;
+       padding: 0; }
+
+
+nav { padding-top: 0;
+      padding-right: 0;
+      padding-bottom: 0;
+      display: flex;
+      position: fixed;
+      top: 0;
+      justify-content: space-evenly;
+      border: 1px solid #525252; 
+      font-weight: bold; 
+      float: left;
+      width: 100%;
+      height: 50px;
+      font-size: 1em; 
+      text-align: left; 
+      background-color:#cacaca;
+      font-family:'Times New Roman', Times, serif;
+      z-index: 999;}
+
+nav a:link { color: #333333; }
+nav a:visited { color: #333333; }
+nav a:hover { color: #A52A2A; }
+nav a { text-decoration: none; }
+
+nav ul { list-style-type: none; 
+         padding-left: 1em;
+         display: flex; 
+         flex-direction: row;
+         gap: 20px; }
+
+img { width: 100%;}
+
+.image {margin-top: 50px;}
+
+main { display: block;
+       padding-left: 2em;
+       padding-right: 2em; 
+       margin-bottom: 5em;
+       margin-top: 1em;
+       margin-left: 140px; 
+       margin-right: 140px;
+       background-color: #ffffff; 
+       overflow: auto;
+       min-width: 350px; 
+       max-width: 1000px;
+       border: 1px solid #b1b1b1; }
+
+.main-wrapper { display: flex;
+                justify-content: center; 
+                align-items: center; 
+                min-height: 100vh; }
+
+.most-paragraphs {color:#000000;
+                  font-family:'Times New Roman', Times, serif;
+                  font-weight: 400; 
+                  text-indent: 50px;
+                  font-size: 20px; }
+
+h2 { color:#000000;
+     text-align: center;
+     font-family:'Times New Roman', Times, serif;
+     font-size: 40px;}
+
+/* Bottom credits link */
+
+.bottom { position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #cacaca;
+          text-align: center;
+          padding: 10px; 
+          font-family:'Times New Roman', Times, serif; 
+          font-weight: bold;}
+
+.bottom a { color: #333333;
+            text-decoration: none; }
